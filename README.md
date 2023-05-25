@@ -1,4 +1,4 @@
-# Authenti-Kator-2.0, fabric-firebase-logger, and productAuth 
+# Secured Authentication System for Product Verification: Integrating Blockchain and Secure Data Management
 
 ## Flow Diagram
 
