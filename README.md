@@ -42,6 +42,28 @@ productAuth is a logging system designed to log the changes of DB in the Hyperle
 
 # Getting Started
 
+Follow the instructions below to set up the Android app.
+
+## Prerequisites
+
+Ensure you have the following installed on your local development machine:
+
+- [Android Studio](https://developer.android.com/studio/index.html) (version 3.x or above)
+- [Java JDK](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) (version 11 or above)
+- [Android SDK](https://developer.android.com/studio/intro/update#sdk-manager) (API 21 or above)
+
+## Setting Up the Android Application
+
+1. **Clone the repository:** Clone the Android app repository to your local machine.
+
+2. **Open the project in Android Studio:** Launch Android Studio, and from the **Welcome to Android Studio** window, select **Open an existing Android Studio project**. Navigate to the cloned repository and select it.
+
+3. **Sync Gradle:** After the project has opened in Android Studio, sync the project with gradle by clicking on `Sync Project with Gradle Files` in the toolbar or from the `File` menu.
+
+4. **Build the project:** Once Gradle sync is finished, build the project by selecting `Build -> Make Project` from the menu.
+
+5. **Run the app:** Connect your Android device or open your desired emulator. Then, click on the green play button, or `Run -> Run 'app'`, to start the application.
+
 Follow the instructions below to set up the prodAuth environment and listener app.
 
 ## Setting Up the prodAuth Environment
