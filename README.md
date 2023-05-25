@@ -35,7 +35,84 @@ Whenever there is a change detected in the DB, it triggers the `createProduct` m
 productAuth is a logging system designed to log the changes of DB in the Hyperledger Fabric. It utilizes chain code to track and log these changes into the Hyperledger Explorer.
 
 ## Getting Started
-Details on how to use these applications will be provided soon.
+
+# Getting Started
+
+Follow the instructions below to set up the prodAuth environment and listener app.
+
+## Setting Up the prodAuth Environment
+
+1. Create a `bootstrap.sh` file and put the following code into it:
+
+```bash
+#!/bin/bash
+
+echo "Bootstraping..."
+minifab netup -s couchdb -e true -o manufacturer.auth.com
+sleep 10
+echo "Channel Creation..."
+minifab create -c authchannel
+sleep 10
+echo "Channel Joining"
+minifab join -c authchannel
+sleep 10
+echo "Anchor Update"
+minifab anchorupdate
+sleep 10
+echo "Profile Creation..."
+minifab profilegen -c authchannel
+```
+
+2. Install your chaincode:
+
+```bash
+./minifab install -n your_chaincode_name -v 1.0 -l node -p ./chaincode/your_chaincode_name
+```
+
+3. Approve, commit, and initialize your chaincode:
+
+```bash
+./minifab approve,commit,initialize -n your_chaincode_name -v 1.0 -l node -p ./chaincode/your_chaincode_name
+```
+
+4. Invoke a function from your chaincode:
+
+```bash
+./minifab invoke -n your_chaincode_name -t your_function_name -p '[arg1,arg2,arg3]'
+```
+
+## Setting Up the Listener App
+
+1. Create the fabric-firebase-logger directory:
+
+```bash
+mkdir fabric-firebase-logger
+cd fabric-firebase-logger
+```
+
+2. Initialize the npm project and install the necessary dependencies:
+
+```bash
+npm init -y
+npm install --save firebase-admin fabric-network
+```
+
+Your project directory should look like this:
+
+```plaintext
+fabric-firebase-logger
+├── node_modules
+├── package.json
+└── app.js
+```
+
+3. Start the app:
+
+```bash
+node app.js
+```
+```
+
 
 ## Contributing
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated. Here are the steps to contribute:
