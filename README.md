@@ -42,7 +42,7 @@ Follow the instructions below to set up the prodAuth environment and listener ap
 
 ## Setting Up the prodAuth Environment
 
-1. Create a `bootstrap.sh` file and put the following code into it:
+1. Create a `startNetwork.sh` file and put the following code into it:
 
 ```bash
 #!/bin/bash
