@@ -111,7 +111,6 @@ fabric-firebase-logger
 ```bash
 node app.js
 ```
-```
 
 
 ## Contributing
