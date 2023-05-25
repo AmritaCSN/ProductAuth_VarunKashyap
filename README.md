@@ -2,10 +2,7 @@
 
 ## Flow Diagram
 
-
-![FlowDiagram (1)](https://github.com/AmritaCSN/ProductAuth_VarunKashyap/assets/43084249/1fb76506-fb93-4820-8572-a22edc30b47b)
-
-
+![FlowDiagram (2)](https://github.com/AmritaCSN/ProductAuth_VarunKashyap/assets/43084249/d64edfc7-5951-4336-a5d8-1f3089fd7e8d)
 
 ## Table of Contents
 
