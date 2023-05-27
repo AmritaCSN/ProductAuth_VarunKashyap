@@ -138,6 +138,16 @@ fabric-firebase-logger
 node app.js
 ```
 
+## Workflow
+1. Node.js app starts up and begins listening for changes in Firebase, specifically the "isAuthenticated" field.
+2. When the "isAuthenticated" field changes to true in Firebase, the Node.js app detects this change.
+3. The Node.js app then calls the **`createProduct`** function on the chaincode, passing the appropriate product data.
+4. The chaincode executes the **`createProduct`** function which creates a new transaction on the blockchain, effectively logging the product authentication in the ledger.
+
+It's important to note that the chaincode and the Firebase listener are two separate components, both orchestrated by the Node.js application. The chaincode is only responsible for managing the state of the blockchain (i.e., creating and reading transactions), while the Firebase listener is responsible for detecting changes in the external database and triggering the appropriate actions in response.
+
+In other words, the chaincode is not actively "listening" for changes; instead, it is invoked by the Node.js application when a relevant change is detected in Firebase.
+
 
 ## Contributing
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated. Here are the steps to contribute:
