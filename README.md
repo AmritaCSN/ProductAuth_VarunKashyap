@@ -6,7 +6,8 @@
 
 ## Ntwork Diagram
 
-![Network_corrected](https://github.com/AmritaCSN/Secured-Authentication-System-for-Product-Verification_VarunKashyap/assets/43084249/87d0daf1-9115-4201-927e-487a8a4a1d4d)
+![Network](https://github.com/AmritaCSN/Secured-Authentication-System-for-Product-Verification_VarunKashyap/assets/43084249/9e2ab2d6-8dd7-4f5a-98aa-deffbef064e1)
+
 
 
 ## Table of Contents
